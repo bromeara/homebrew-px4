@@ -20,9 +20,7 @@ class KconfigFrontends < Formula
     sha256 "9c02a28ea1c55253299560fbac6b7772425cc194f30fae5e055c6c9a664e1a08" => :el_capitan
   end
 
-  def patches
-    DATA
-  end
+  patch :DATA
 
   def install
     system "./bootstrap"
